@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box size:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
+    background:white;
+    color:black;
+}
+header{
+    background:blue;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+header h1{
+    font-size:3rem
+}
+header p{
+    margin-top:10px;
+}
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 0;
+}
+section{
+    background:white;
+    margin-bottm:20px;
+    paddig:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+h2{
+    color:blue;
+    margin-bottom:15px;
+}
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.skills{
+    background:white;
+    color:blue;
+    padding:8px 15px;
+    border-radius:20px;
+    font-weight:bold;
+}
+.project{
+    margin-bottom:15px;
+}
+footer{
+    background:blue;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    boredr-radius:5px;
+}
+button:hover{
+    background:blue;
+}
