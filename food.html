@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#ff6600;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#222;
+    font-size:18px;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#ff6600;
+}
+
+.order-btn{
+    background:#ff6600;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:120px 8% 50px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text span{
+    color:#ff6600;
+    font-size:22px;
+    font-weight:600;
+}
+
+.hero-text h1{
+    font-size:70px;
+    color:#0f172a;
+    margin:20px 0;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff6600;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:18px;
+}
+
+.hero-image{
+    width:45%;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+/* Features */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding:50px 8%;
+    background:#f8f8f8;
+}
+
+.feature-box{
+    text-align:center;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.feature-box i{
+    font-size:40px;
+    color:#ff6600;
+}
+
+.feature-box h3{
+    margin:15px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image{
+    width:80%;
+    margin-top:40px;
+}
+
+.hero-text h1{
+    font-size:50px;
+}
+
+.features{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    margin:20px 0;
+}
+
+.features{
+    grid-template-columns:1fr;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🍔 Foody</div>
+
+    <nav>
+        <ul>
+            <li><a href="food.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <a href="order.html" class="order-btn">Order Now</a>
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <span>🍽️ Good Food, Good Mood</span>
+
+        <h1>Delicious Food<br>For Every Mood</h1>
+
+        <p>
+            We serve tasty, healthy and freshly prepared
+            meals made with premium ingredients.
+        </p>
+
+        <a href="menu.html" class="btn">Explore Menu →</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="food.png" alt="Food">
+    </div>
+
+</section>
+
+<section class="features">
+
+    <div class="feature-box">
+        <h3>🌿 Fresh Ingredients</h3>
+        <p>Only high quality fresh ingredients are used.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>👨‍🍳 Expert Chefs</h3>
+        <p>Meals crafted by professional chefs.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Quick delivery at your doorstep.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>❤️ Made With Love</h3>
+        <p>Prepared with care and passion.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Foody Restaurant | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

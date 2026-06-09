@@ -1,0 +1,161 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+
+    <style>
+
+        /* Descendant Selector */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        nav {
+            background: black;
+            padding: 10px;
+        }
+
+        /* Child Selector */
+        ul > li {
+            list-style: none;
+            padding: 8px;
+            background: lightgray;
+            margin: 5px;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* General Sibling Selector */
+        h2 ~ p {
+            margin-left: 20px;
+        }
+
+        /* Grouping Selector */
+        h1, h2, h3 {
+            font-family: Georgia, serif;
+        }
+
+        /* Chaining Classes */
+        .btn.active {
+            background: #7C3AED;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        /* Attribute Selector */
+        input[type="email"] {
+            border: 2px solid blue;
+            padding: 5px;
+        }
+
+        a[href^="https"] {
+            color: green;
+        }
+
+        a[href*="github"] {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Main Heading</h1>
+
+    <!-- Descendant Selector Example -->
+    <nav>
+        <a href="selectors.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Child Selector Example -->
+    <h2>Menu</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <!-- Adjacent + General Sibling Example -->
+    <h2>CSS Selectors</h2>
+
+    <p>
+        I am immediately after h2.
+        (Affected by BOTH h2+p and h2~p)
+    </p>
+
+    <p>
+        I am another paragraph after h2.
+        (Affected only by h2~p)
+    </p>
+
+    <div>
+        Some div element
+    </div>
+
+    <p>
+        I am also after h2.
+        (Affected by h2~p)
+    </p>
+
+    <hr>
+
+    <!-- Grouping Selector Example -->
+    <h3>Grouped Heading</h3>
+
+    <hr>
+
+    <!-- Chaining Classes Example -->
+    <button class="btn">
+        Normal Button
+    </button>
+
+    <button class="btn active">
+        Active Button
+    </button>
+
+    <hr>
+
+    <!-- Attribute Selector Example -->
+    <input type="text" placeholder="Text Field">
+
+    <br><br>
+
+    <input type="email" placeholder="Email Field">
+
+    <hr>
+
+    <!-- Attribute Selector with href -->
+    <a href="https://google.com">
+        Google Link
+    </a>
+
+    <br><br>
+
+    <a href="https://github.com">
+        GitHub Link
+    </a>
+
+    <br><br>
+
+    <a href="http://example.com">
+        Normal HTTP Link
+    </a>
+
+</body>
+</html>

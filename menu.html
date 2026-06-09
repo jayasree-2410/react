@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+  <script>
+
+     let total = 0;
+
+     function addToCart(item, price){
+
+                 const cartItems =document.getElementById("cart-items");
+
+                 const li = document.createElement("li");
+
+                 li.innerHTML = `${item} - ₹${price}`;
+
+                 cartItems.appendChild(li);
+
+                 total += price;
+
+                 document.getElementById("total").textContent = total;
+     }
+
+  </script>
+<body>
+   <section id="menu" class="menu">
+
+      <div class="title">
+        <h2>Our Popular Menu</h2>
+        <p>Choose your favorite delicious food</p>
+      </div>
+    <section id="cart" class="cart-section">
+
+        <h2>🛒 Shopping Cart</h2>
+
+        <ul id="cart-items"></ul>
+
+        <h3>Total: ₹<span id="total">0</span></h3>
+
+    </section>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <img src="burger.jpg" alt="Burger">
+            <h3>Cheese Burger</h3>
+            <p>Loaded with cheese and fresh veggies.</p>
+            <span>₹149</span>
+            <button onclick="addToCart('Cheese Burger',149)"> Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="pizza.jpg" alt="Pizza">
+            <h3>Italian Pizza</h3>
+            <p>Freshly baked pizza with extra toppings.</p>
+            <span>₹299</span>
+            <button onclick="addToCart('Italian Pizza',299)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="biryani.jpg" alt="Biryani">
+            <h3>Chicken Biryani</h3>
+            <p>Traditional spicy dum biryani.</p>
+            <span>₹249</span>
+            <button onclick="addToCart('Chicken Biryani',249)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="pasta.jpg" alt="Pasta">
+            <h3>Creamy Pasta</h3>
+            <p>Italian white sauce pasta.</p>
+            <span>₹199</span>
+            <button onclick="addToCart('Creamy Pasta',199)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="sandwich.jpg" alt="Sandwich">
+            <h3>Veg Sandwich</h3>
+            <p>Healthy and tasty sandwich.</p>
+            <span>₹99</span>
+            <button onclick="addToCart('Veg Sandwich',99)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="cake.jpg" alt="Cake">
+            <h3>Chocolate Cake</h3>
+            <p>Soft and delicious chocolate cake.</p>
+            <span>₹179</span>
+            <button onclick="addToCart('Chocolate-cake',179)">Add to Cart</button>
+        </div>
+
+    </div>
+  </section>
